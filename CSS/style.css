@@ -70,9 +70,28 @@ input {
   margin: 15px 0;
 }
 
+.trasportadora {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0;
+}
+
+.fast-entregas {
+  margin: 0 10px 0 0;
+}
+
+.img-fast {
+  height: 100px;
+  margin: 0 10px 0 0;
+}
+
+.img-ligeirinho {
+  height: 100px;
+}
+
 .button {
   padding: 10px 0 0 0;
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 .buttonEnviar {
@@ -87,6 +106,5 @@ margin: 0 auto;
 }
 
 .buttonEnviar:hover {
-  padding: 10px 16px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
 }

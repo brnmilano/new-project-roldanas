@@ -17,16 +17,16 @@
         <h1>Faça aqui o seu pedido:</h1>
 
         <p>• Roldanas Estilo 1 (Cada peça custa R$10,00)</p><input type="number" name="tipo1" id="tipo1"
-            placeholder="Quantas você quer?">
+          placeholder="Quantas você quer?">
 
         <p>• Roldanas Estilo 2 (Cada peça custa R$15,00)</p><input type="number" name="tipo2" id="tipo2"
-            placeholder="Quantas você quer?">
+          placeholder="Quantas você quer?">
 
         <p>• Roldanas Estilo 3 (Cada peça custa R$20,00)</p><input type="number" name="tipo3" id="tipo3"
-            placeholder="Quantas você quer?">
+          placeholder="Quantas você quer?">
 
         <p>• Roldanas Estilo 4 (Cada peça custa R$25,00)</p><input type="number" name="tipo4" id="tipo4"
-            placeholder="Quantas você quer?">
+          placeholder="Quantas você quer?">
 
       </div>
 
@@ -35,19 +35,51 @@
       </div>
 
       <div>
-        <p class="text">O total de peças pedidas é:</p>
+        <p class="text">
+          O total de peças pedidas é de:
+        </p>
       </div>
       <div class="pecas">
-        <p id="pecas"></p>
+        <p id="pecas">
+        </p>
       </div>
       <div class="custoPedido">
         <span class="totalPecas"></span>
-        <p>O seu pedido vai custar: <span id="resultado"></span></p>
+        <p>
+          O preço total do seu pedido é de:
+          <span id="resultado">
+          </span>
+        </p>
       </div>
-      <div class="button">
-        <button class="buttonEnviar" type="submit">Enviar pedido</button>
+
+      <div>
+        
+        <p>
+          Escolha a transportadora para entrega:
+        </p>
+
+        <div class="trasportadora">
+          <div>
+            <img src="./IMG/fast.png" class="img-fast">
+          </div>
+          <label><input type="checkbox" class="fast-entregas">FastEntregas</label>
+        </div>
+
+        <div class="trasportadora">
+          <div>
+            <img src="./IMG/ligeirinho.png" alt="img-ligeirinho">
+          </div>
+          <label><input type="checkbox" class="ligeirinho-com">Ligeirinho.com</label>
+        </div>
+
       </div>
+      <span id="peso"></span>
     </div>
+    <!-- <div class="button">
+        <button class="buttonEnviar" type="submit">Enviar pedido</button>
+        <input class="buttonEnviar" type="button" value="Peso do pedido:" onclick="peso()">
+      </div> -->
+  </div>
   </div>
 
 
@@ -58,8 +90,6 @@
       var estilo2 = document.getElementById('tipo2');
       var estilo3 = document.getElementById('tipo3');
       var estilo4 = document.getElementById('tipo4');
-
-      var pecas = window.document.getElementById('pecas')
 
       var t1 = Number(tipo1.value);
       var t2 = Number(tipo2.value);
@@ -82,27 +112,35 @@
 
       const valorPedido = valorTotalEstilo1 + valorTotalEstilo2 + valorTotalEstilo3 + valorTotalEstilo4;
 
+      var pecas = window.document.getElementById('pecas')
       pecas.innerHTML = `Você pediu: ${t1} Roldanas do tipo 1.<br>Você pediu: ${t2} Roldanas do tipo 2.<br>Você pediu: ${t3} Roldanas do tipo 3.<br>Você pediu: ${t4} Roldanas do tipo 4.`
 
       var totalPecas = document.querySelector('.totalPecas');
-      totalPecas.innerHTML = `O total de peças que você pediu é: ${totalDePecas}`;
+      totalPecas.innerHTML = `Você pediu ${totalDePecas} peças.`;
 
       var resultado = document.getElementById('resultado');
       resultado.innerHTML = valorPedido.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })
-
     }
 
+    // function peso() {
+    //   var peso1 = document.getElementById('tipo1');
+    //   var peso2 = document.getElementById('tipo2');
+    //   var peso3 = document.getElementById('tipo3');
+    //   var peso4 = document.getElementById('tipo4');
 
+    //   var p1 = Number(tipo1.value);
+    //   var p2 = Number(tipo2.value);
+    //   var p3 = Number(tipo3.value);
+    //   var p4 = Number(tipo4.value);
 
+    //   var pesoTotal = p1 + p2 + p3 + p4;
 
-
-
-    // (`Você pediu <strong>${pedido1}</strong> roldanas de 5/8 canal U.
-    // Cada peça custa ${precos.valorCincoOitavoU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}! <br>
-    // O valor dessa compra é: <strong>${valorTotalCicoOitavoU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</strong> <br><br>`);
-
-    // function valor() {
-    //   valorPedido.innerHTML = `O valor total do seu pedido é: ${valorPedido}`
+    //   const peso {
+    //     pesoEstilo1: 1,
+    //     pesoEstilo2: 2,
+    //     pesoEstilo3: 3,
+    //     pesoEstilo4: 4,
+    //   }
     // }
 
   </script>
