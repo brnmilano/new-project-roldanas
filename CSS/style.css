@@ -76,17 +76,21 @@ input {
   align-items: center;
 }
 
-.fast-entregas {
-  margin: 0 10px 0 0;
-}
-
 .img-fast {
   height: 100px;
   margin: 0 10px 0 0;
 }
 
+.fast-entregas {
+  margin: 0 10px 0 0;
+}
+
 .img-ligeirinho {
   height: 98px;
+  margin: 0 10px 0 0;
+}
+
+.ligeirinho-com {
   margin: 0 10px 0 0;
 }
 
