@@ -14,7 +14,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.mainContainer {
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +24,12 @@ body {
   padding: 15px 0;
 }
 
-.card {
+.one-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   min-height: 100%;
-  border-radius: 25px;
+  border-radius: 25px 0 0 25px;
   background: white;
   padding: 15px 100px;
 }
@@ -43,7 +43,7 @@ h1 {
 
 input {
   padding: 5px;
-  margin: 15px 0;
+  margin: 10px 0;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -73,7 +73,6 @@ input {
 .trasportadora {
   display: flex;
   align-items: center;
-  margin: 10px 0 0;
 }
 
 .fast-entregas {
@@ -86,7 +85,18 @@ input {
 }
 
 .img-ligeirinho {
-  height: 100px;
+  height: 98px;
+  margin: 0 10px 0 0;
+}
+
+.two-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100%;
+  border-radius: 0 25px 25px 0;
+  background: white;
+  padding: 15px 100px;
 }
 
 .button {
