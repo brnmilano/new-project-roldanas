@@ -168,7 +168,8 @@
         respeso.innerHTML = pesoPedido 
 
         if (pesoPedido <= 10000) {
-          limite.innerHTML = `O peso está dentro do limite de 10000 mil quilos! <br> O pedido será entrege na sua residência.`
+          limite.innerHTML = `O peso está dentro do limite de 10000 mil quilos! <br> O pedido será entrege na sua residência. <br><br>`
+          limite.innerHTML += `Obrigado por fazer parte dessa família!`
         } else {
           limite.innerHTML = `O peso passou o limite de 10000 mil quilos! <br> A transportadora não pode enviar seu pedido.`
         }
