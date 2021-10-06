@@ -1,0 +1,79 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 170px;
+  background: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 45px;
+}
+
+.img-polia {
+  height: 130px;
+  margin-right: 10px;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-style: italic;
+  color: white;
+  font-weight: 700;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.produtos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 21px;
+  margin: 0 0 35px 0;
+}
+
+.imagens {
+  display: flex;
+  justify-content: center;
+}
+
+.img-roldana {
+  height: 150px;
+}
+
+.tipos-roldanas {
+  text-align: center;
+  align-items: center;
+}
+
+.tipos-roldanas:hover {
+  color: red;
+}

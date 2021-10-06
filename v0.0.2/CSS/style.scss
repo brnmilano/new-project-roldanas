@@ -1,0 +1,38 @@
+.text-reveal {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    animation: text-reveal 5s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+    background-color: #157bad;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+  }
+}
+
+@keyframes text-reveal {
+  from {
+    transform: translateX(-101%);
+  }
+
+  to {
+    transform: translateX(101%);
+  }
+}
+
+.text-reveal h1 {
+  animation: fade 1ms 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes fade {
+  to {
+
+  }
+}
