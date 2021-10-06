@@ -14,6 +14,16 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+main {
+  background: linear-gradient(180deg, rgba(248, 248, 255, 1) 50%, rgba(105, 105, 105, 1) 100%);
+  padding: 50px 100px;
+  color: black;
+  font-weight: 700;
+  height: 100%;
+}
+
+/* ABA DO CABEÇALHO */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -27,20 +37,21 @@ header {
   align-items: center;
 }
 
-.logo h1 {
-  font-size: 45px;
-}
-
 .img-polia {
   height: 130px;
   margin-right: 10px;
 }
 
 header h1 {
-  text-transform: uppercase;
-  font-style: italic;
   color: white;
   font-weight: 700;
+  font-size: 45px;
+}
+header p {
+  color: white;
+  text-align: end;
+  font-style: italic;
+  font-size: 12px;
 }
 
 header a {
@@ -51,15 +62,7 @@ header a {
   font-size: 22px;
 }
 
-main {
-  background: rgb(248, 248, 255);
-  background: linear-gradient(180deg, rgba(248, 248, 255, 1) 50%, rgba(105, 105, 105, 1) 100%);
-  color: white;
-  padding: 50px 100px;
-  color: black;
-  font-weight: 700;
-  height: 2000px;
-}
+/* ABA DA HISTÓRIA */
 
 .historia {
   display: flex;
@@ -120,7 +123,7 @@ main {
   margin-top: 50px;
 }
 
-/* Accordion styles  */
+/* Accordion styles */
 
 .tabs {
   position: relative;
@@ -206,9 +209,11 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
   user-select: none;
 }
 
+/* ABA DOS PRODUTOS */
+
 .cointainer-produtos {
   width: 100%;
-  height: 285px;
+  height: 1050px;
 }
 
 .produtos {
@@ -221,38 +226,166 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 }
 
 .imagens {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 300px;
+  display: grid;
+  padding: 0 150px;
 }
 
 .tipos-roldanas {
+  display: flex;
   text-align: center;
   align-items: center;
-  transition-property: font-size;
   transition-timing-function: ease-in-out;
   transition-duration: 0.2s;
+  margin-bottom: 35px;
 }
 
-/* .tipos-roldanas:hover {
-  color: red;
-  font-size: 20px;
-  cursor: pointer;
-} */
+.estilos-roldanas {
+  display: grid;
+}
 
+.estilos-roldanas:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.tipos-roldanas h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.tipos-roldanas p {
+  padding: 0 50px;
+}
+
+.estilos-roldanas p {
+  font-size: 14px;
+  padding: 0;
+}
 
 .img-roldana {
   height: 150px;
 }
 
+/* ABA DOS PEDIDOS */
+
+.container-pedidos {
+  width: 100%;
+  height: 600px;
+}
+
+.pedidos {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 21px;
+  margin: 0 0 25px 0;
+}
+
+.pedidos h2 {
+
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.aba-pedidos {
+  display: flex;
+}
+
+.text-input {
+  margin-bottom: 35px;
+}
+
+.text-input p {
+  margin-bottom: 5px;
+}
+
+.text-input input {
+  border-radius: 5px;
+  padding: 5px 7px;
+  font-style: italic;
+}
+
+.ver-total-pecas {
+  display: grid;
+}
+
+.buttonEnviar {
+  padding: 10px 36px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+}
+
+.inv {
+  width: 150px;
+}
+
+.pecas {
+  font-size: 24px;
+}
+
+.custoPedido {
+  font-size: 24px;
+}
+
+
 footer {
   background: black;
+  height: 380px;
 }
 
 .rodape {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  padding: 50px 250px;
+  color: white;
+}
+
+.rodape h1 {
+  font-weight: 900;
+}
+
+.rodape p {
+  font-size: 10px;
+}
+
+.img-rodape {
+  height: 100px;
+}
+
+.content-rodape {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 250px;
+  text-align: left;
+}
+
+.itens-contato {
+  display: grid;
+  gap: 20px;
+  color: white;
+}
+
+.itens-contato h2 {
+  color: rgb(3, 170, 3);
+}
+
+.itens-contato h3 {
+  color: rgb(3, 170, 3);
+  text-transform: uppercase;
+}
+
+.itens-contato p {
+  justify-content: left;
+}
+
+.social {
+  display: grid;
+  text-align: right;
+  color: rgb(3, 170, 3);
 }
 
 .rodape>*:not(:first-child) {
@@ -260,20 +393,31 @@ footer {
 }
 
 .linkedin {
-  width: 50px;
+  width: 40px;
 }
 
 .instagram {
-  width: 50px;
+  width: 40px;
 }
 
 .facebook {
-  width: 50px;
+  width: 40px;
 }
 
-footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

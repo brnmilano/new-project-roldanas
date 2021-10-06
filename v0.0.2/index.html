@@ -17,8 +17,14 @@
   <header>
     <div class="logo">
       <img class="img-polia" src="./IMG/polia.png" alt="Polia">
-      <h1>DM Roldanas</h1>
+      <div>
+        <h1>DM Roldanas</h1>
+        <p>
+          Eu gosto do impossível. Lá a concorrência é menor - Walt Disney
+        </p>
+      </div>
     </div>
+
     <div>
       <a href="">Home</a>
       <a href="">Produtos</a>
@@ -153,68 +159,247 @@
 
       <section>
         <div class="cointainer-produtos">
-          <div class="text-reveal">
+          <div class="produtos">
             <h1>Nossos Produtos</h1>
           </div>
           <div class="imagens">
 
             <div class="tipos-roldanas">
-              <img class="img-roldana" src="./IMG/img-roldana-1.png" alt="Roldana">
-              <p>Roldana tipo 1</p>
+              <div class="estilos-roldanas">
+                <img class="img-roldana" src="./IMG/img-roldana-1.png" alt="Roldana">
+                <h3>Roldana tipo 1</h3>
+                <p>
+                  R$10,00 und.
+                </p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ulla
+              </p>
+            </div>
+
+
+            <div class="tipos-roldanas">
+              <div class="estilos-roldanas">
+                <img class="img-roldana" src="./IMG/img-roldana-2.png" alt="Roldana">
+                <h3>Roldana tipo 2</h3>
+                <p>
+                  R$15,00 und.
+                </p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ulla
+              </p>
             </div>
 
             <div class="tipos-roldanas">
-              <img class="img-roldana" src="./IMG/img-roldana-2.png" alt="Roldana">
-              <p>Roldana tipo 2</p>
+              <div class="estilos-roldanas">
+                <img class="img-roldana" src="./IMG/img-roldana-3.png" alt="Roldana">
+                <h3>Roldana tipo 3</h3>
+                <p>
+                  R$20,00 und.
+                </p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ulla
+              </p>
             </div>
 
             <div class="tipos-roldanas">
-              <img class="img-roldana" src="./IMG/img-roldana-3.png" alt="Roldana">
-              <p>Roldana tipo 3</p>
-            </div>
+              <div class="estilos-roldanas">
+                <img class="img-roldana" src="./IMG/img-roldana-4.png" alt="Roldana">
+                <h3>Roldana tipo 4</h3>
+                <p>
+                  R$25,00 und.
+                </p>
+              </div>
 
-            <div class="tipos-roldanas">
-              <img class="img-roldana" src="./IMG/img-roldana-4.png" alt="Roldana">
-              <p>Roldana tipo 4</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ulla
+              </p>
+
             </div>
           </div>
         </div>
       </section>
     </div>
 
-
-    <!-- <div>
-        Empresa
+    <section class="container-pedidos">
+      <div class="pedidos">
+        <h1>Pedidos</h1>
       </div>
 
-      <div>
-        Produtos
+      <div class="aba-pedidos">
+
+        <div class="pedido-produtos">
+
+          <div>
+            <div class="text-input">
+              <p>• Roldanas Estilo 1</p><input type="number" name="tipo1" id="tipo1"
+                placeholder="Digite a quantidade...">
+            </div>
+            <div class="text-input">
+              <p>• Roldanas Estilo 2</p><input type="number" name="tipo2" id="tipo2"
+                placeholder="Digite a quantidade...">
+            </div>
+            <div class="text-input">
+              <p>• Roldanas Estilo 3</p><input type="number" name="tipo3" id="tipo3"
+                placeholder="Digite a quantidade...">
+            </div>
+            <div class="text-input">
+              <p>• Roldanas Estilo 4</p><input type="number" name="tipo4" id="tipo4"
+                placeholder="Digite a quantidade...">
+            </div>
+            <div class="ver-total-pecas">
+              <input class="buttonEnviar" type="button" value="Ver total de peças:" onclick="somar()">
+              <input class="buttonEnviar" type="button" value="Peso do pedido" onclick="peso()">
+            </div>
+          </div>
+        </div>
+
+        <div class="inv">
+        </div>
+        <div>
+          <div class="pecas">
+            <p id="pecas">
+            </p>
+            <span class="totalPecas">
+            </span>
+            <p>
+              <!-- O preço total do seu pedido é de: -->
+              <span id="resultado">
+              </span>
+            </p>
+          </div>
+
+          <div class="custoPedido">
+          </div>
+        </div>
+
+        <div class="inv">
+        </div>
+
+
+
+        <div id="quilos">
+        </div>
+        <div class="custoPedido">
+          <span class="totalPecas"></span>
+          <p>
+            <!-- O peso total do seu pedido é: -->
+            <span id="respeso">
+            </span>
+          </p>
+          <span id="limite">
+          </span>
+        </div>
       </div>
-          
-      <div>
-        Contato
-      </div>
-    </div> -->
+
+
+    </section>
+
   </main>
 
+
+
+
+
+
+
+
+
   <footer>
-    <div class="rodape">
-      <a href="https://www.linkedin.com/in/bruno-milano-779630173/" target="_blank">
-        <img class="linkedin" src="./IMG/linkedin.png" alt="linkedin">
-      </a>
+    <div>
 
-      <a href="https://www.instagram.com/milanobrn/" target="_blank">
-        <img class="instagram" src="./IMG/instagram.webp" alt="Instagram">
-      </a>
+      <div class="rodape">
+        <img class="img-rodape" src="./IMG/polia.png" alt="logo">
+        <div>
+          <h1>DM Roldanas</h1>
+          <p>
+            Eu gosto do impossível. Lá a concorrência é menor - Walt Disney
+          </p>
+        </div>
+      </div>
 
-      <a href="https://www.facebook.com/bruno.milano.566/" target="_blank">
-        <img class="facebook" src="./IMG/facebook.png" alt="Facebook">
-      </a>
+      <div class="content-rodape">
+        <div class="itens-contato">
+          <h3>
+            small beginning, giant ending!
+          </h3>
+          <p>
+            +55 61 4002-8922
+          </p>
+          <p>
+            emai.teste@hotmail.com
+          </p>
+        </div>
+        <div class="itens-contato">
+          <h2>
+            Menu
+          </h2>
+          <p>
+            Home
+          </p>
+          <p>
+            Pedidos
+          </p>
+        </div>
+        <div class="social">
+          <h3>
+            Social
+          </h3>
+          <div>
+            <a href="https://www.linkedin.com/in/bruno-milano-779630173/" target="_blank">
+              <img class="linkedin" src="./IMG/linkedin.png" alt="linkedin">
+            </a>
+          
+            <a href="https://www.instagram.com/milanobrn/" target="_blank">
+              <img class="instagram" src="./IMG/instagram.png" alt="Instagram">
+            </a>
+          
+            <a href="https://www.facebook.com/bruno.milano.566/" target="_blank">
+              <img class="facebook" src="./IMG/facebook.png" alt="Facebook">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contato">
+
+      </div>
     </div>
 
-    <p>&copy; Todos os direitos reservados - Bruno Milano</p>
+
   </footer>
+
+
   <script src="https://code.jquery.com/jquery-3.6.0.js%22%3E"></script>
+  <script src="valores.js"></script>
+  <script src="peso.js"></script>
 </body>
 
 </html>
+
+
+<!-- <div class="rodape">
+  <a href="https://www.linkedin.com/in/bruno-milano-779630173/" target="_blank">
+    <img class="linkedin" src="./IMG/linkedin.png" alt="linkedin">
+  </a>
+
+  <a href="https://www.instagram.com/milanobrn/" target="_blank">
+    <img class="instagram" src="./IMG/instagram.webp" alt="Instagram">
+  </a>
+
+  <a href="https://www.facebook.com/bruno.milano.566/" target="_blank">
+    <img class="facebook" src="./IMG/facebook.png" alt="Facebook">
+  </a>
+</div>
+
+<p>&copy; Todos os direitos reservados - Bruno Milano</p> -->
