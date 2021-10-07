@@ -330,6 +330,39 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
   font-size: 24px;
 }
 
+/* ABA COMPLEMENTAR */
+
+.video-mapa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-mapa h2 {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.video {
+  border-radius: 10px;
+}
+
+.espc {
+  margin: 0 25px;
+}
+
+.mapa {
+  border-radius: 10px;
+}
+
+.neg {
+  width: 520px; 
+  height: 315px;
+  border-radius: 10px;
+  background-size: contain;
+}
+
 
 footer {
   background: black;
@@ -390,6 +423,10 @@ footer {
 
 .rodape>*:not(:first-child) {
   margin-left: 10px;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .linkedin {
