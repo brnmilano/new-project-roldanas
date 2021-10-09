@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/teste.css">
   <link rel="icon" href="./IMG/icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
   <title>DM Roldanas</title>
@@ -25,10 +26,10 @@
     </div>
 
     <div>
-      <a href="">Home</a>
-      <a href="">Produtos</a>
-      <a href="">Pedidos</a>
-      <a href="">Contato</a>
+      <a href="/v0.0.2/#home">Home</a>
+      <a href="/v0.0.2/#produtos">Produtos</a>
+      <a href="/v0.0.2/#pedidos">Pedidos</a>
+      <a href="/v0.0.2/#contato">Contato</a>
     </div>
   </header>
 
@@ -36,7 +37,7 @@
     <div>
       <section>
         <div class="historia">
-          <h1>
+          <h1 class="text-reveal">
             Nossa História
           </h1>
         </div>
@@ -156,7 +157,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="produtos">
         <div class="cointainer-produtos">
           <div class="produtos">
             <h1>Nossos Produtos</h1>
@@ -230,7 +231,7 @@
       </section>
     </div>
 
-    <section class="container-pedidos">
+    <section id="pedidos" class="container-pedidos">
       <div class="pedidos">
         <h1>Pedidos</h1>
       </div>
@@ -303,32 +304,33 @@
 
 
     </section>
+  </main>
 
+  <section class="img-bp">
     <div class="video-mapa">
       <div>
-        <h2>Quer mais informações sobre qual produto escolher?</h2>
-        <iframe class="video" width="520" height="315" src="https://www.youtube.com/embed/n8JTvlzzdQA"
+        <h2>Quer saber qual produto escolher?</h2>
+        <iframe class="video" width="550" height="315" src="https://www.youtube.com/embed/n8JTvlzzdQA"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
-
+  
       <div>
         <h2>Negociações claras e transparentes!</h2>
         <img class="neg" src="./IMG/neg.jpg" alt="">
       </div>
-
+  
       <div>
-        <h2>Ou se preferir, venha nos conhecer pessoalmente!</h2>
+        <h2>Venha nos conhecer pessoalmente!</h2>
         <iframe class="mapa"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10856.424791807816!2d-48.03315554210213!3d-15.839465134519452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a326effbf4047%3A0xc60de9833ad3efdd!2s%C3%81guas%20Claras!5e0!3m2!1spt-BR!2sbr!4v1633625124310!5m2!1spt-BR!2sbr"
-        width="520" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10856.424791807816!2d-48.03315554210213!3d-15.839465134519452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a326effbf4047%3A0xc60de9833ad3efdd!2s%C3%81guas%20Claras!5e0!3m2!1spt-BR!2sbr!4v1633625124310!5m2!1spt-BR!2sbr"
+          width="550" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
+  </section>
 
-  </main>
-
-  <footer>
+  <footer id="contato">
     <div>
 
       <div class="rodape">
@@ -358,10 +360,10 @@
             Menu
           </h2>
           <p>
-            Home
+            <a href="/v0.0.2/#home">Home</a>
           </p>
           <p>
-            Pedidos
+            <a href="/v0.0.2/#pedidos">Pedidos</a>
           </p>
         </div>
         <div class="social">
@@ -385,34 +387,18 @@
       </div>
 
       <div class="contato">
-
       </div>
     </div>
 
+    <div class="direitos">
+      <p>&copy; Todos os direitos reservados - Bruno Milano</p>
+    </div>
 
   </footer>
-
 
   <script src="https://code.jquery.com/jquery-3.6.0.js%22%3E"></script>
   <script src="valores.js"></script>
   <script src="peso.js"></script>
+
 </body>
-
 </html>
-
-
-<!-- <div class="rodape">
-  <a href="https://www.linkedin.com/in/bruno-milano-779630173/" target="_blank">
-    <img class="linkedin" src="./IMG/linkedin.png" alt="linkedin">
-  </a>
-
-  <a href="https://www.instagram.com/milanobrn/" target="_blank">
-    <img class="instagram" src="./IMG/instagram.webp" alt="Instagram">
-  </a>
-
-  <a href="https://www.facebook.com/bruno.milano.566/" target="_blank">
-    <img class="facebook" src="./IMG/facebook.png" alt="Facebook">
-  </a>
-</div>
-
-<p>&copy; Todos os direitos reservados - Bruno Milano</p> -->

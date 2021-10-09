@@ -10,8 +10,13 @@
   font-style: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Merriweather', serif;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -22,7 +27,7 @@ main {
   height: 100%;
 }
 
-/* ABA DO CABEÇALHO */
+/* CABEÇALHO */
 
 header {
   display: flex;
@@ -62,7 +67,7 @@ header a {
   font-size: 22px;
 }
 
-/* ABA DA HISTÓRIA */
+/* HISTÓRIA */
 
 .historia {
   display: flex;
@@ -209,7 +214,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
   user-select: none;
 }
 
-/* ABA DOS PRODUTOS */
+/* PRODUTOS */
 
 .cointainer-produtos {
   width: 100%;
@@ -266,7 +271,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
   height: 150px;
 }
 
-/* ABA DOS PEDIDOS */
+/* PEDIDOS */
 
 .container-pedidos {
   width: 100%;
@@ -330,18 +335,31 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
   font-size: 24px;
 }
 
-/* ABA COMPLEMENTAR */
+/* COMPLEMENTAR */
+
+.img-bp {
+  background-image: url(../IMG/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  width: 100%;
+  background-attachment: fixed;
+}
 
 .video-mapa {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 52px 60px 0 60px;
 }
 
 .video-mapa h2 {
-  font-size: 17px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 15px;
+  font-weight: 900;
+  color: white;
 }
 
 .video {
@@ -357,16 +375,15 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 }
 
 .neg {
-  width: 520px; 
+  width: 550px; 
   height: 315px;
   border-radius: 10px;
   background-size: contain;
 }
 
-
 footer {
   background: black;
-  height: 380px;
+  height: 400px;
 }
 
 .rodape {
@@ -421,6 +438,11 @@ footer {
   color: rgb(3, 170, 3);
 }
 
+.social h3 {
+  font-size: 23px;
+  margin-bottom: 44px;
+}
+
 .rodape>*:not(:first-child) {
   margin-left: 10px;
 }
@@ -441,20 +463,9 @@ footer {
   width: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.direitos {
+  text-align: center;
+  margin: 20px 0 0 0;
+  color: white;
+  font-size: 12px;
+}

@@ -4,7 +4,7 @@
 
   &::after {
     animation: text-reveal 5s cubic-bezier(0.85, 0, 0.15, 1) forwards;
-    background-color: #157bad;
+    background-color: #696969;
     content: "";
     display: block;
     position: absolute;
@@ -12,7 +12,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-
   }
 }
 
