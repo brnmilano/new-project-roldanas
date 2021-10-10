@@ -21,7 +21,7 @@ body {
 
 main {
   background: linear-gradient(180deg, rgba(248, 248, 255, 1) 50%, rgba(105, 105, 105, 1) 100%);
-  padding: 50px 100px;
+  padding: 50px 50px;
   color: black;
   font-weight: 700;
   height: 100%;
@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 170px;
+  padding: 20px 100px;
   background: black;
 }
 
@@ -52,6 +52,7 @@ header h1 {
   font-weight: 700;
   font-size: 45px;
 }
+
 header p {
   color: white;
   text-align: end;
@@ -121,14 +122,14 @@ header a {
   display: grid;
 }
 
+/* Accordion styles */
+
 .tab-container {
   width: 100%;
-  height: 285px;
+  height: 310px;
   padding: 0 100px;
   margin-top: 50px;
 }
-
-/* Accordion styles */
 
 .tabs {
   position: relative;
@@ -276,6 +277,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 .container-pedidos {
   width: 100%;
   height: 600px;
+  padding: 0 150px;
 }
 
 .pedidos {
@@ -288,7 +290,6 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 }
 
 .pedidos h2 {
-
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
@@ -296,6 +297,8 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 
 .aba-pedidos {
   display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .text-input {
@@ -304,6 +307,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 
 .text-input p {
   margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .text-input input {
@@ -314,6 +318,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 
 .ver-total-pecas {
   display: grid;
+  font-weight: 600;
 }
 
 .buttonEnviar {
@@ -375,7 +380,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 }
 
 .neg {
-  width: 550px; 
+  width: 550px;
   height: 315px;
   border-radius: 10px;
   background-size: contain;
@@ -468,4 +473,86 @@ footer {
   margin: 20px 0 0 0;
   color: white;
   font-size: 12px;
+}
+
+@media screen and (max-width: 1440px) {
+  .apresentacao {
+    padding: 0;
+  }
+  .texto-ap {
+    padding-right: 150px;
+  }
+  .tab-container {
+    padding: 0;
+  }
+  .tab-label {
+    padding: 15px 25px;
+  }
+  .container-pedidos {
+    width: 100%;
+    height: 500px;
+    padding: 0 100px;
+  }
+  .img-bp {
+    height: 100%;
+  }
+  .video-mapa {
+    padding: 52px 60px;
+  }
+  footer {
+    height: 370px;
+  }
+  .rodape {
+    padding: 25px 100px;
+  }
+  .content-rodape {
+    padding: 25px 100px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .apresentacao {
+    padding: 0;
+  }
+  .texto-ap {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 20px 50px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  header a {
+    font-size: 18px;
+  }
+  .img-polia {
+    height: 100px;
+  }
+  .apresentacao {
+    display: grid;
+    padding: 0;
+  }
+  .imgap {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .imagens {
+    padding: 0;
+  }
+  .video-mapa {
+    padding: 50px 80px
+  }
+  .video {
+    width: 400px;
+    height: 250px;
+  }
+  .mapa {
+    width: 400px;
+    height: 250px;
+  }
 }
