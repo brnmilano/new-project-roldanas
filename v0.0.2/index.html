@@ -46,7 +46,7 @@
           </h1>
         </div>
         <div class="apresentacao">
-          <div>
+          <div class="img-tipos-roldanas">
             <img class="imgap" src="./IMG/imgap.png" alt="Apresentação">
           </div>
           <div class="texto-ap">
@@ -245,56 +245,65 @@
 
       <div class="aba-pedidos">
 
-        <div class="pedido-produtos">
-
+        <div>
           <div>
-            <div class="text-input">
-              <p>• Roldanas Estilo 1</p><input type="number" name="tipo1" id="tipo1"
-                placeholder="Digite a quantidade...">
+            <div class="pedido-produtos">
+              <div class="text-input">
+                <p>• Roldanas Estilo 1</p><input type="number" name="tipo1" id="tipo1"
+                  placeholder="Digite a quantidade...">
+              </div>
+              <div class="text-input">
+                <p>• Roldanas Estilo 2</p><input type="number" name="tipo2" id="tipo2"
+                  placeholder="Digite a quantidade...">
+              </div>
             </div>
-            <div class="text-input">
-              <p>• Roldanas Estilo 2</p><input type="number" name="tipo2" id="tipo2"
-                placeholder="Digite a quantidade...">
+            <div class="pedido-produtos">
+              <div class="text-input">
+                <p>• Roldanas Estilo 3</p><input type="number" name="tipo3" id="tipo3"
+                  placeholder="Digite a quantidade...">
+              </div>
+              <div class="text-input">
+                <p>• Roldanas Estilo 4</p><input type="number" name="tipo4" id="tipo4"
+                  placeholder="Digite a quantidade...">
+              </div>
             </div>
-            <div class="text-input">
-              <p>• Roldanas Estilo 3</p><input type="number" name="tipo3" id="tipo3"
-                placeholder="Digite a quantidade...">
+          </div>
+          <div class="ver-total-pecas">
+            <div>
+              <input class="button-pecas" type="button" value="Total de peças:" onclick="somar()">
             </div>
-            <div class="text-input">
-              <p>• Roldanas Estilo 4</p><input type="number" name="tipo4" id="tipo4"
-                placeholder="Digite a quantidade...">
-            </div>
-            <div class="ver-total-pecas">
-              <input class="buttonEnviar" type="button" value="Ver total de peças:" onclick="somar()">
-              <input class="buttonEnviar" type="button" value="Peso do pedido" onclick="peso()">
+            <div>
+              <input class="button-peso" type="button" value="Peso do pedido:" onclick="peso()">
             </div>
           </div>
         </div>
 
         <div class="inv">
         </div>
-        <div>
-          <div class="pecas">
-            <p id="pecas">
-            </p>
-            <span class="totalPecas">
-            </span>
-            <p>
-              <!-- O preço total do seu pedido é de: -->
-              <span id="resultado">
-              </span>
-            </p>
-          </div>
 
-          <div class="custoPedido">
+          <div>
+            <div class="pecas">
+              <p id="pecas">
+              </p>
+              <span class="totalPecas">
+              </span>
+              <p>
+                <!-- O preço total do seu pedido é de: -->
+                <span id="resultado">
+                </span>
+              </p>
+            </div>
+
+            <div class="custoPedido">
+            </div>
           </div>
-        </div>
 
         <div class="inv">
         </div>
 
         <div id="quilos">
         </div>
+
         <div class="custoPedido">
           <span class="totalPecas"></span>
           <p>
@@ -305,8 +314,9 @@
           <span id="limite">
           </span>
         </div>
-      </div>
 
+      </div>
+      
 
     </section>
   </main>

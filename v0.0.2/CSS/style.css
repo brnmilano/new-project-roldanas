@@ -86,10 +86,13 @@ header a {
   padding: 0 100px;
 }
 
+.img-tipos-roldanas {
+  margin-right: 50px;
+}
+
 .imgap {
   align-items: center;
   border-radius: 20px;
-  margin-right: 50px;
   height: 280px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   transition: 0.1ms;
@@ -281,7 +284,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 }
 
 .pedidos {
-  display: grid;
+  display: flex;
   text-align: center;
   justify-content: center;
   font-weight: 900;
@@ -321,15 +324,21 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
   font-weight: 600;
 }
 
-.buttonEnviar {
+.button-pecas {
+  padding: 10px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button-peso {
   padding: 10px 36px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 0 10px 0;
 }
 
 .inv {
-  width: 150px;
+  width: 80px;
 }
 
 .pecas {
@@ -489,9 +498,10 @@ footer {
     padding: 15px 25px;
   }
   .container-pedidos {
-    width: 100%;
-    height: 500px;
-    padding: 0 100px;
+    padding: 0 20px;
+  }
+  .buttonEnviar {
+    padding: 10px 25px;
   }
   .img-bp {
     height: 100%;
@@ -517,6 +527,10 @@ footer {
   .texto-ap {
     padding: 0;
   }
+  .tab-label {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -536,10 +550,20 @@ footer {
     display: grid;
     padding: 0;
   }
-  .imgap {
-    display: flex;
+  .tab-label {
+    font-size: 12px;
+    padding: 12px 13px;
+  }
+  .buttonEnviar {
+    padding: 10px 28px;
+  }
+  .img-tipos-roldanas {
+    display: grid;
     justify-content: center;
-    margin: 0;
+    margin: 0 0 35px 0;
+  }
+  .imgap {
+    height: 350px;
   }
   .imagens {
     padding: 0;
@@ -555,4 +579,52 @@ footer {
     width: 400px;
     height: 250px;
   }
+}
+
+@media screen and (max-width: 834px) {
+  main {
+    padding: 25px;
+  }
+  header {
+    padding: 20px 20px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  header p {
+    font-size: 10px;
+  }
+  header a {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  .container-pedidos {
+    padding: 0;
+  }
+  .aba-pedidos {
+    justify-content: center;
+    align-items: center;
+  }
+  .pedido-produtos {
+    display: flex;
+    text-align: center;
+  }
+  .text-input {
+    margin: 0 20px 20px 0;
+  }
+  .inv {
+    display: none;
+  }
+  .ver-total-pecas {
+    display: flex;
+    align-items: center;
+
+  }
+  .button-pecas {
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 20px 0 0;
+  }
+
 }
