@@ -279,7 +279,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 
 .container-pedidos {
   width: 100%;
-  height: 600px;
+  height: 500px;
   padding: 0 150px;
 }
 
@@ -300,12 +300,18 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 
 .aba-pedidos {
   display: flex;
+  text-align: center;
+  justify-content: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
 .text-input {
-  margin-bottom: 35px;
+  margin: 0 35px 35px 0;
+}
+
+#text-margin {
+  margin: 0 0 35px 0;
 }
 
 .text-input p {
@@ -320,21 +326,32 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 }
 
 .ver-total-pecas {
-  display: grid;
+  display: flex;
+  text-align: center;
+  justify-content: center;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .button-pecas {
-  padding: 10px 40px;
+  padding: 10px 39px;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 10px;
+}
+
+.inv-button {
+  margin: 0 22px;
 }
 
 .button-peso {
-  padding: 10px 36px;
+  padding: 10px 37px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.style-js {
+  display: flex;
+  justify-content: space-between;
 }
 
 .inv {
@@ -380,8 +397,8 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
   border-radius: 10px;
 }
 
-.espc {
-  margin: 0 25px;
+.negociacao {
+  display: none;
 }
 
 .mapa {
@@ -389,7 +406,7 @@ input:checked~.tab-label>.arrowBackground>.arrowAdd {
 }
 
 .neg {
-  width: 550px;
+  width: 510px;
   height: 315px;
   border-radius: 10px;
   background-size: contain;
@@ -433,13 +450,15 @@ footer {
   color: white;
 }
 
-.itens-contato h2 {
-  color: rgb(3, 170, 3);
+.itens-contato a {
+  text-decoration: none;
+  color: white;
 }
 
 .itens-contato h3 {
   color: rgb(3, 170, 3);
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 .itens-contato p {
@@ -450,10 +469,11 @@ footer {
   display: grid;
   text-align: right;
   color: rgb(3, 170, 3);
+  text-transform: uppercase;
 }
 
 .social h3 {
-  font-size: 23px;
+  font-size: 18px;
   margin-bottom: 44px;
 }
 
@@ -554,8 +574,17 @@ footer {
     font-size: 12px;
     padding: 12px 13px;
   }
+  .container-pedidos {
+    height: 450px;
+  }
   .buttonEnviar {
     padding: 10px 28px;
+  }
+  .pecas {
+    font-size: 20px;
+  }
+  .custoPedido {
+    font-size: 20px;
   }
   .img-tipos-roldanas {
     display: grid;
@@ -601,9 +630,8 @@ footer {
   .container-pedidos {
     padding: 0;
   }
-  .aba-pedidos {
-    justify-content: center;
-    align-items: center;
+  #text-margin {
+    margin: 0 0 35px 0;
   }
   .pedido-produtos {
     display: flex;
@@ -615,16 +643,131 @@ footer {
   .inv {
     display: none;
   }
+  .container-pedidos {
+    height: 430px;
+  }
+  .buttonEnviar {
+    padding: 10px 28px;
+  }
   .ver-total-pecas {
     display: flex;
     align-items: center;
-
   }
-  .button-pecas {
-    padding: 10px 40px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 20px 0 0;
+  .pecas {
+    font-size: 18px;
+  }
+  .custoPedido {
+    font-size: 18px;
+  }
+  .img-bp {
+    height: 820px;
+  }
+  .video-mapa {
+    display: grid;
+    justify-content: center;
+    padding: 40px;
+  }
+  .video {
+    width: 600px;
+    height: 315px;
+    margin-bottom: 21px;
+  }
+  .mapa {
+    width: 600px;
+    height: 315px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-input {
+    margin: 0 10px 35px 0;
+  }
+  .pecas {
+    font-size: 16px;
+  }
+  .custoPedido {
+    font-size: 16px;
+  }
+  .rodape {
+    padding: 20px 50px;
+  }
+  .content-rodape {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 20px 7px;
+  }
+  .img-polia {
+    height: 70px;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header p {
+    font-size: 9px;
+  }
+  header a {
+    font-size: 11px;
+  }
+  .imgap {
+    height: 260px;
+  }
+  .tab-container {
+    margin-top: 25px;
+    height: 670px;
+  }
+  .tabs {
+    display: grid;
+    justify-content: start;
+  }
+  .tab-label {
+    padding: 12px 30px;
+    font-size: 17px;
+  }
+  .arrowBackground {
+    margin-left: 15px;
+  }
+  .container-pedidos {
+    height: 650px;
+  }
+  .aba-pedidos {
+    display: grid;
+  }
+  .img-bp {
+    height: 770px;
+  }
+  .video-mapa {
+    padding: 15px;
+  }
+  .video {
+    width: 500px;
+    height: 315px;
+  }
+  .mapa {
+    width: 500px;
+    height: 315px;
+  }
+  footer {
+    background: black;
+    height: 520px;
+  }
+  .content-rodape {
+    display: grid;
+    justify-content: space-between;
+    padding: 0;
+    text-align: left;
+  }
+  .linkedin {
+    width: 30px;
+  }
+  .instagram {
+    width: 30px;
+  }
+  .facebook {
+    width: 30px;
   }
 
 }

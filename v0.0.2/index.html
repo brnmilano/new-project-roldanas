@@ -84,7 +84,7 @@
             <input type="checkbox" id="chck1" />
 
             <label class="tab-label" for="chck1">
-              Como tudo começou:
+              Início:
 
               <div class="arrowBackground">
                 <img width="50%" class="arrowAdd" src="./img/ArrowDown.svg" alt="ArrowDown" />
@@ -94,7 +94,9 @@
             <div class="tab-content">
               <div class="answer">
                 <p>
-                  Em breve...
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ulla
                 </p>
               </div>
             </div>
@@ -104,7 +106,7 @@
             <input type="checkbox" id="chck2" />
 
             <label class="tab-label" for="chck2">
-              Qualidade dos produtos:
+              Qualidade:
 
               <div class="arrowBackground">
                 <img width="50%" class="arrowAdd" src="./img/ArrowDown.svg" alt="ArrowDown" />
@@ -114,7 +116,9 @@
             <div class="tab-content">
               <div class="answer">
                 <p>
-                  Em breve...
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ulla
                 </p>
               </div>
             </div>
@@ -124,7 +128,7 @@
             <input type="checkbox" id="chck3" />
 
             <label class="tab-label" for="chck3">
-              Atendimento personalizado:
+              Atendimento:
 
               <div class="arrowBackground">
                 <img width="50%" class="arrowAdd" src="./img/ArrowDown.svg" alt="ArrowUp" />
@@ -134,7 +138,9 @@
             <div class="tab-content">
               <div class="answer">
                 <p>
-                  Em breve...
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ulla
                 </p>
               </div>
             </div>
@@ -144,7 +150,7 @@
             <input type="checkbox" id="chck4" />
 
             <label class="tab-label" for="chck4">
-              Parceiria e fidelização.
+              Parceiria:
 
               <div class="arrowBackground">
                 <img width="50%" class="arrowAdd" src="./img/ArrowDown.svg" alt="ArrowDown" />
@@ -154,7 +160,9 @@
             <div class="tab-content">
               <div class="answer">
                 <p>
-                  Em breve...
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ulla
                 </p>
               </div>
             </div>
@@ -243,67 +251,63 @@
         <h1>Pedidos</h1>
       </div>
 
-      <div class="aba-pedidos">
+      <div>
+        <div class="aba-pedidos">
 
+          <div class="text-input">
+            <p>• Roldanas Estilo 1</p><input type="number" name="tipo1" id="tipo1" placeholder="Digite a quantidade...">
+          </div>
+
+          <div class="text-input">
+            <p>• Roldanas Estilo 2</p><input type="number" name="tipo2" id="tipo2" placeholder="Digite a quantidade...">
+          </div>
+
+          <div class="text-input">
+            <p>• Roldanas Estilo 3</p><input type="number" name="tipo3" id="tipo3" placeholder="Digite a quantidade...">
+          </div>
+
+          <div id="text-margin" class="text-input">
+            <p>• Roldanas Estilo 4</p><input type="number" name="tipo4" id="tipo4" placeholder="Digite a quantidade...">
+          </div>
+
+        </div>
+
+        <div class="ver-total-pecas">
+          <div>
+            <input class="button-pecas" type="button" value="Total de peças:" onclick="somar()">
+          </div>
+          <div class="inv-button">
+
+          </div>
+          <div>
+            <input class="button-peso" type="button" value="Peso do pedido:" onclick="peso()">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="style-js">
         <div>
-          <div>
-            <div class="pedido-produtos">
-              <div class="text-input">
-                <p>• Roldanas Estilo 1</p><input type="number" name="tipo1" id="tipo1"
-                  placeholder="Digite a quantidade...">
-              </div>
-              <div class="text-input">
-                <p>• Roldanas Estilo 2</p><input type="number" name="tipo2" id="tipo2"
-                  placeholder="Digite a quantidade...">
-              </div>
-            </div>
-            <div class="pedido-produtos">
-              <div class="text-input">
-                <p>• Roldanas Estilo 3</p><input type="number" name="tipo3" id="tipo3"
-                  placeholder="Digite a quantidade...">
-              </div>
-              <div class="text-input">
-                <p>• Roldanas Estilo 4</p><input type="number" name="tipo4" id="tipo4"
-                  placeholder="Digite a quantidade...">
-              </div>
-            </div>
-          </div>
-          <div class="ver-total-pecas">
-            <div>
-              <input class="button-pecas" type="button" value="Total de peças:" onclick="somar()">
-            </div>
-            <div>
-              <input class="button-peso" type="button" value="Peso do pedido:" onclick="peso()">
-            </div>
-          </div>
-        </div>
-
-        <div class="inv">
-        </div>
-
-          <div>
-            <div class="pecas">
-              <p id="pecas">
-              </p>
-              <span class="totalPecas">
+          <div class="pecas">
+            <p id="pecas">
+            </p>
+            <span class="totalPecas">
+            </span>
+            <p>
+              <!-- O preço total do seu pedido é de: -->
+              <span id="resultado">
               </span>
-              <p>
-                <!-- O preço total do seu pedido é de: -->
-                <span id="resultado">
-                </span>
-              </p>
-            </div>
-
-            <div class="custoPedido">
-            </div>
+            </p>
           </div>
-
-        <div class="inv">
+  
+          <div class="custoPedido">
+          </div>
         </div>
-
+  
+  
         <div id="quilos">
         </div>
-
+  
         <div class="custoPedido">
           <span class="totalPecas"></span>
           <p>
@@ -314,9 +318,7 @@
           <span id="limite">
           </span>
         </div>
-
       </div>
-      
 
     </section>
   </main>
@@ -330,6 +332,11 @@
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
+      </div>
+
+      <div class="negociacao">
+        <h2>Negociações transparentes!</h2>
+        <img class="neg" src="./IMG/neg.jpg" alt="">
       </div>
 
       <div>
@@ -368,9 +375,9 @@
           </p>
         </div>
         <div class="itens-contato">
-          <h2>
+          <h3>
             Menu
-          </h2>
+          </h3>
           <p>
             <a href="/v0.0.2/#inicio">Home</a>
           </p>
@@ -413,4 +420,5 @@
   <script src="peso.js"></script>
 
 </body>
+
 </html>
